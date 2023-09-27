@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+#menu li {
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  color: white;
+  border: 0.1rem solid black;
+  font-weight: 900;
+  border-radius: 20px;
+  transition: all 0.2s;
+  position: relative;
+}
+#menu li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 0.1rem solid black;
+  border-radius: 20px;
+}
+#menu .submenu {
+  position: absolute;
+  flex-direction: column;
+  top: 50px;
+  left: 0;
+  overflow: hidden;
+}
+/* class pour un toggle sur mes .submenu */
+
+.hide {
+  height: 0;
+}
+.show {
+  height: 120px;
+}
